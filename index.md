@@ -1,4 +1,4 @@
-# Xin chào
+# Home
 
 ## [Laravel](/laravel)
 
