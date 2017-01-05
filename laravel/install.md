@@ -2,7 +2,7 @@
 
 ## 1, Cài đặt qua composer
 
-```
+```shell
 composer create-project --prefer-dist laravel/laravel <new-project-name>
 cd <new-project-name>
 ```
