@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lê Qu?c Tu?n
+---
+
 # Home
 
 ## [Laravel](/laravel)
