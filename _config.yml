@@ -1,6 +1,2 @@
 markdown: kramdown
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
-syntax-highlighting:
-    enabled : true
+highlighter: rouge
