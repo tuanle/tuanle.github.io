@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lê Qu?c Tu?n
+title: Blog
 ---
 
 # Home
