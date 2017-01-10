@@ -7,12 +7,6 @@ composer create-project --prefer-dist laravel/laravel <new-project-name>
 cd <new-project-name>
 ```
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
 ## 2, Set permission
 
 (www-data là webserver user, tuanlq là login user)
