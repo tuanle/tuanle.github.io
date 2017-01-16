@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 12em;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.4;
     background: #f7f7f7;
@@ -87,8 +87,8 @@ textarea {
    ========================================================================== */
 
 #container {
-    width: 940px;
-    max-width: 940px;
+    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
