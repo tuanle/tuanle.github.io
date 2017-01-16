@@ -13,6 +13,7 @@
 html {
     color: #222;
     font-size: 1em;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.4;
     background: #f7f7f7;
 }
@@ -91,7 +92,8 @@ textarea {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, br {
+    font-family: 'Noto Serif', serif;
     font-weight: normal;
 }
 
