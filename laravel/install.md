@@ -24,6 +24,66 @@ sudo chmod -R ug+rwx storage bootstrap/cache
 
 **Your user as owner**
 
+```php
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use App\Services\AuthServiceInterface;
+
+class VerifyAmsAuthKey
+{
+    /**
+     * @var \App\Services\AuthServiceInterface
+     */
+    protected $authService;
+
+    /**
+     * Constructor
+     */
+    public function __construct(
+        AuthServiceInterface $authService
+    )
+    {
+        $this->authService = $authService;
+    }
+
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next)
+    {
+        if (! $authKey = auth_key()) {
+            return redirect(route('FCAU030')); // Login
+        }
+
+        if (
+            ! ($amsUser = $this->authService->getAmsUserInfo($authKey))
+            ||
+            ! ($user = $this->authService->findByAmsUserId($amsUser['profile']['accountId']))
+        ) {
+            session()->flash('auth_key_timeout', true);
+
+            return redirect(route('FCBA170')); // Logout
+        }
+
+        // Attach cookie to next response
+        cookie()->queue(cookie()->forever('ams_auth_key', $authKey));
+
+        // Create ams_user instance
+        app()->instance('ams_user', array_merge($user->toArray(), $amsUser));
+
+        return $next($request);
+    }
+}
+```
+
+
 ```
 sudo chown -R tuanlq:www-data /path/to/your/root/directory
 sudo find /path/to/your/root/directory -type f -exec chmod 664 {} \;
