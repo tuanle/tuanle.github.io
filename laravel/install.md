@@ -4,6 +4,9 @@
 <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
 {% endif %}
 
+* TOC
+{:toc}
+
 ## 1, Cài đặt qua composer
 
 ```bash
