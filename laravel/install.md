@@ -1,5 +1,9 @@
 # Installation
 
+{% if page.title %}
+<a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+{% endif %}
+
 ## 1, Cài đặt qua composer
 
 ```bash
