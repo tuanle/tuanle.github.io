@@ -13,7 +13,7 @@ cd <new-project-name>
 
 **Webserver as owner (cách bình thường)**
 
-```shell
+```bash
 sudo chown -R www-data:www-data /path/to/your/root/directory
 sudo usermod -a -G www-data tuanlq
 sudo find /path/to/your/root/directory -type f -exec chmod 644 {} \;
