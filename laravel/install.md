@@ -7,6 +7,8 @@
 * TOC
 {:toc}
 
+{% gist 5555251 %}
+
 ## 1, Cài đặt qua composer
 
 ```bash
