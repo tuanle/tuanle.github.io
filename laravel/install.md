@@ -1,3 +1,8 @@
+---
+title: test
+breadcrumb: Java-Page
+---
+
 # Installation
 
 {% if page.title %}
