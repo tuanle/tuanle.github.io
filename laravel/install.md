@@ -1,6 +1,8 @@
 ---
-title: test
-breadcrumb: Java-Page
+layout: post
+title:  "Welcome to the Automatic Breadcrumb Page!"
+date:   2015-05-06 10:22:17
+categories: jekyll update
 ---
 
 # Installation
