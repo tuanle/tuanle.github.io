@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Blog
+title: Home
 ---
 
-# Home
+### [Laravel](/laravel)
 
-## [Laravel](/laravel)
+### [Cài đặt, setup](/setup)
 
-## [Cài đặt, setup](/setup)
+### [Git](/git)
 
-## [Git](/git)
+### [Vim](/vim)
 
-## [Vim](/vim)
-
-## [Các vấn đề khác](/other)
+### [Các vấn đề khác](/other)
