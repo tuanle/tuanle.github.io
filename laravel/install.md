@@ -20,9 +20,9 @@ categories: jekyll update
 
 ## 1, Cài đặt qua composer
 
-```bash
-composer create-project --prefer-dist laravel/laravel <new-project-name>
-cd <new-project-name>
+```shell
+$ composer create-project --prefer-dist laravel/laravel <new-project-name>
+$ cd <new-project-name>
 ```
 
 ## 2, Set permission
