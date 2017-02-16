@@ -117,7 +117,7 @@ a {
 
 #menu .item a:hover {
     border: 2px solid #242a3a;
-    border-right: 0;
+    border-left: 0;
     padding: 1px 3px 1px 5px;
     color: #242a3a;
     background: #fefefe;
