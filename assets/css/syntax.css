@@ -1,4 +1,4 @@
-.highlight { display: block; margin: 7px 0; border: 1px solid #ccc; border-radius: 2px; overflow-x: auto; font-size: 12px; line-height: 20px; color: #333; background: #fff; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.highlight { display: block; margin: 7px 0; padding: 6px 0; border: 1px solid #ccc; border-radius: 2px; overflow-x: auto; font-size: 12px; line-height: 20px; color: #333; background: #fff; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 .highlight pre { margin: 0; }
 .highlight .gutter { padding: 0 16px; text-align: center; color: rgba(0,0,0,.3); }
 .highlight .hll { background-color: #ffffcc }
