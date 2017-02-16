@@ -9,7 +9,7 @@
    ========================================================================== */
 
 html, body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color: #242a3a;
     background: #fefefe;
@@ -84,7 +84,6 @@ a {
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    font-family: 'Noto Sans', sans-serif;
 }
 
 /* ==========================================================================
