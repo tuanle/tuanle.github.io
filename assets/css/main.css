@@ -89,18 +89,18 @@ a {
 
 #container {
     width: 672px;
-    margin: 0 auto;
+    margin: 0 auto 0 64px;
     padding: 0 16px;
 }
 
 #menu {
     padding: 0;
     list-style: none;
-    border-left: 2px solid #242a3a;
+    border-bottom: 2px solid #242a3a;
 }
 
 #menu .item {
-    margin-bottom: 3px;
+    display: inline-block;
 }
 
 #menu .item:last-child {
@@ -117,14 +117,22 @@ a {
 
 #menu .item a:hover {
     border: 2px solid #242a3a;
-    border-left: 0;
-    padding: 1px 3px 1px 5px;
+    border-bottom: 0;
+    padding: 1px 3px 3px 3px;
     color: #242a3a;
     background: #fefefe;
 }
 
 h1#title {
-    text-align: center;
+    margin: 0;
+}
+
+#content {
+    margin-top: 16px;
+}
+
+footer {
+    border-top: 2px solid #242a3a;
 }
 
 
