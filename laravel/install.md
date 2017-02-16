@@ -31,13 +31,13 @@ $ cd <new-project-name>
 
 **Webserver as owner (cách bình thường)**
 
-```bash
-sudo chown -R www-data:www-data /path/to/your/root/directory
-sudo usermod -a -G www-data tuanlq
-sudo find /path/to/your/root/directory -type f -exec chmod 644 {} \;
-sudo find /path/to/your/root/directory -type d -exec chmod 755 {} \;
-sudo chgrp -R www-data storage bootstrap/cache
-sudo chmod -R ug+rwx storage bootstrap/cache
+```shell
+$ sudo chown -R www-data:www-data /path/to/your/root/directory
+$ sudo usermod -a -G www-data tuanlq
+$ sudo find /path/to/your/root/directory -type f -exec chmod 644 {} \;
+$ sudo find /path/to/your/root/directory -type d -exec chmod 755 {} \;
+$ sudo chgrp -R www-data storage bootstrap/cache
+$ sudo chmod -R ug+rwx storage bootstrap/cache
 ```
 
 **Your user as owner**
