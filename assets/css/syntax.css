@@ -1,6 +1,6 @@
 .highlight { border: 1px solid #ddd; }
-.highlight .gutter { padding: 0.5rem; color: #ccc; }
-.highlight .code { display: block; overflow-x: auto; padding: 0.5rem; font-size: 12px; line-height: 1.45; color: #333; background: #f8f8f8; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.highlight .gutter pre { padding: 6px; color: #ccc; }
+.highlight .code { display: block; overflow-x: auto; padding: 6px; font-size: 12px; line-height: 1.45; color: #333; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
