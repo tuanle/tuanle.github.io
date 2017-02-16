@@ -5,18 +5,8 @@ date:   2015-05-06 10:22:17
 categories: jekyll update
 ---
 
-# Installation
-
-{% if page.title %}
-<a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
-{% endif %}
-
 * TOC
 {:toc}
-
-{% gist a6ce966a4bfbc0d363178485fe2daee6 reference.md %}
-
-{% gist 9c4ba6ec2a103127928d56e6008e82ea %}
 
 ## 1, Cài đặt qua composer
 
@@ -118,3 +108,7 @@ _(http://stackoverflow.com/a/37266353)_
 cp .env.example .env
 php artisan key:generate
 ```
+
+{% gist a6ce966a4bfbc0d363178485fe2daee6 reference.md %}
+
+{% gist 9c4ba6ec2a103127928d56e6008e82ea %}
