@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Welcome to the Automatic Breadcrumb Page!"
-tags: [web, jekyll]
+tags: [web, jekyll, github-pages]
 ---
 
 {% assign post = page %}
