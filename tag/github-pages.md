@@ -14,6 +14,6 @@ permalink: /tag/github-pages/
 {% endif %}
 </div>
 
-{% for data_tag in site.tags %}
+{% for data_tag in site.tags[page.tag] %}
 {{ data_tag }}
 {% endfor %}
