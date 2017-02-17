@@ -13,3 +13,7 @@ permalink: /tag/github-pages/
 <p>There are no posts for this tag.</p>
 {% endif %}
 </div>
+
+{% for data_tag in site.tags %}
+{{ data_tag }}
+{% endfor %}
