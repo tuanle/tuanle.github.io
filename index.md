@@ -13,6 +13,6 @@ title: Home
 
 ### [Các vấn đề khác](/other)
 
-{% for post in site.tags["github-pages"] %}
+{% for post in site.tags[github-pages] %}
 {{ post.title }}
 {% endfor %}
