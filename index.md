@@ -3,28 +3,22 @@ layout: default
 title: Home
 ---
 
-### [Laravel](/laravel)
-
-### [Cài đặt, setup](/setup)
-
-### [Git](/git)
-
-### [Vim](/vim)
-
-### [Các vấn đề khác](/other)
-
 {% assign tag = "github-pages" %}
 {% if site.tags[tag] %}
     <ul class="posts">
     {% for post in site.tags[tag] %}
         <li class="post">
-            <span class="timestamp">
+            <time>
                 {{ post.date | date_to_string }}
-            </span>
+            </time>
             <a href="{{ post.url }}" title="{{ post.title }}">
                 {{ post.title }}
             </a>
         </li>
     {% endfor %}
     </ul>
+{% else %}
+<p class="error">
+    There are no posts on code category
+</p>
 {% endif %}
