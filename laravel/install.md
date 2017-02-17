@@ -4,7 +4,7 @@ title:  "Welcome to the Automatic Breadcrumb Page!"
 tags: [web, jekyll, github-pages]
 ---
 
-{{ include tags_content.md }}
+{% include tags_content.md %}
 
 * TOC
 {:toc}
