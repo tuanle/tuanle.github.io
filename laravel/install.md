@@ -2,8 +2,14 @@
 layout: default
 title:  "Welcome to the Automatic Breadcrumb Page!"
 date:   2015-05-06 10:22:17
-categories: jekyll update
+categories: jekyll
 ---
+
+{% assign categories = page.categories %}
+
+{% for category in categories %}
+  <span class="entry-categories"><a href="{{ site.url }}/{{ page.category-url }}/" rel="category">{{ page.category }}</a></span>{% unless forloop.last %},{% endunless %}
+{% endfor %}
 
 * TOC
 {:toc}
