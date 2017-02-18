@@ -149,6 +149,10 @@ ul.posts {
     list-style: none;
 }
 
+ul.posts li.post {
+    margin-bottom: 14px 0;
+}
+
 ul.posts li.post time, ul.posts li.post a {
     display: block;
 }
@@ -158,6 +162,7 @@ ul.posts li.post time {
 }
 
 ul.posts li.post a {
+    margin-top: 7px;
     color: #0275d8;
 }
 
