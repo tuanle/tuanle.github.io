@@ -74,12 +74,13 @@ textarea {
     resize: vertical;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 a {
+    color: #0275d8;
     text-decoration: none;
+}
+
+a:hover {
+    color: #014c8c;
 }
 
 h1, h2, h3, h4, h5 {
@@ -150,7 +151,7 @@ ul.posts {
 }
 
 ul.posts li.post {
-    margin-bottom: 14px 0;
+    margin-bottom: 14px;
 }
 
 ul.posts li.post time, ul.posts li.post a {
@@ -163,11 +164,6 @@ ul.posts li.post time {
 
 ul.posts li.post a {
     margin-top: 7px;
-    color: #0275d8;
-}
-
-ul.posts li.post a:hover {
-    color: #014c8c;
 }
 
 
