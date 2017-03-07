@@ -9,10 +9,11 @@
    ========================================================================== */
 
 html, body {
-    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #242a3a;
-    background: #fefefe;
+    color: #c5c8c6;
+    background: #000000;
 }
 
 /*
@@ -75,16 +76,17 @@ textarea {
 }
 
 a {
-    color: #0275d8;
+    color: #7aa6da;
     text-decoration: none;
 }
 
 a:hover {
-    color: #014c8c;
+    color: #afcae9;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
+    color: #e78c45;
 }
 
 /* ==========================================================================
@@ -97,34 +99,36 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
+header {
+    margin-bottom: 16px;
+}
+
 #menu {
     padding: 0;
     list-style: none;
-    border-bottom: 2px solid #242a3a;
 }
 
 #menu .item {
     display: inline-block;
+    margin-right: 2px;
 }
 
 #menu .item:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
 }
 
 #menu .item a {
     display: inline-block;
-    font-size: 13px;
     padding: 3px 5px;
-    color: #fefefe;
-    background: #242a3a;
+    color: #000000;
+    background: #d54e53;
 }
 
 #menu .item a:hover {
-    border: 2px solid #242a3a;
-    border-bottom: 0;
-    padding: 1px 3px 3px 3px;
-    color: #242a3a;
-    background: #fefefe;
+    border: 2px solid #d54e53;
+    padding: 1px 3px;
+    color: #d54e53;
+    background: #000000;
 }
 
 h1#title {
@@ -135,10 +139,36 @@ h1#title {
     margin-top: 16px;
 }
 
+table.article-short-item {
+    margin: 8px 0;
+}
+
+table.article-short-item th {
+    font-weight: normal;
+    font-size: 12px;
+    font-style: italic;
+    width: 36px;
+    color: #c397d8;
+}
+
+table.article-short-item th.month-day {
+    border-bottom: 1px solid #c397d8;
+}
+
+table.article-short-item td.article-title {
+    padding-left: 8px;
+    color: #7aa6da;
+}
+
 footer {
-    border-top: 2px solid #242a3a;
-    margin: 16px 0;
+    margin: 32px 0 16px;
     padding: 3px 0;
+}
+
+footer .info {
+    color: #969896;
+    background: #424242;
+    padding: 3px 5px;
 }
 
 pre code {
