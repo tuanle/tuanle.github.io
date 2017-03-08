@@ -198,10 +198,10 @@ ul.posts li.post a {
 }
 
 code {
-    color: #c397d8;
+    color: #b9ca4a;
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 14px;
-    padding: 2px 5px;
+    padding: 1px;
     background: #424242;
 }
 
