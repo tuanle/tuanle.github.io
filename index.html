@@ -5,18 +5,17 @@ title: Code
 
 {% assign tag = "github-pages" %}
 {% if site.tags[tag] %}
-    <ul class="posts">
     {% for post in site.tags[tag] %}
-        <li class="post">
-            <time>
-                {{ post.date | date_to_string }}
-            </time>
-            <a href="{{ post.url }}" title="{{ post.title }}">
-                {{ post.title }}
-            </a>
-        </li>
+        <table class="article-short-item">
+            <tr>
+                <th class="month-day">{{ post.date | date: "%d %b" }}</th>
+                <td class="article-title" rowspan="2"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
+            </tr>
+            <tr>
+                <th class=""year>{{ post.date | date: "%Y" }}</th>
+            </tr>
+        </table>
     {% endfor %}
-    </ul>
 {% else %}
 <p class="error">
     There are no posts on code category
