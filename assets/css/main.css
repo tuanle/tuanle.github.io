@@ -147,7 +147,8 @@ table.article-short-item th {
     font-weight: normal;
     font-size: 12px;
     font-style: italic;
-    width: 36px;
+    width: 38px;
+    min-width: 38px;
     color: #c397d8;
 }
 
