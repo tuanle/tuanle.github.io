@@ -71,3 +71,7 @@ sudo service httpd restart
 ```
 
 And it worked.
+
+3, More information
+
+[https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html](https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html)
