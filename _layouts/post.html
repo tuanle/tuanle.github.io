@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div id="time">
+    <span class="timestamp">
+        {{ page.date | date_to_string }}
+    </span>
+</div>
+
+<h1 id="title">
+    {{ page.title }}
+</h1>
+
+<div id="content" class="row">
+    {{ content }}
+</div>
+
+<div id="navigation">
+    <div class="group">
+        Post on <a id="page-category" class="category" href="/categories/{{ page.category }}.html" title="Posts on {{ page.category }} category">{{ page.category }}</a>
+        with {% for tag in page.tags %}<a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">{{ tag }}</a>{% endfor %}
+    </div>
+    <br/>
+    <div class="prev-next">
+        {% if page.previous.url %}
+        <a id="prev" href="{{page.previous.url}}">&#9664;&nbsp;{{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a id="next" href="{{page.next.url}}">{{page.next.title}}&nbsp;&#9654;</a>
+        {% endif %}
+    </div>
+</div>
+

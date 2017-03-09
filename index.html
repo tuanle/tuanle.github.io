@@ -1,23 +1,12 @@
 ---
 layout: default
-title: Code
+title: Top
 ---
 
-{% assign tag = "github-pages" %}
-{% if site.tags[tag] %}
-    {% for post in site.tags[tag] %}
-        <table class="article-short-item">
-            <tr>
-                <th class="month-day">{{ post.date | date: "%d %b" }}</th>
-                <td class="article-title" rowspan="2"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
-            </tr>
-            <tr>
-                <th class=""year>{{ post.date | date: "%Y" }}</th>
-            </tr>
-        </table>
-    {% endfor %}
-{% else %}
-<p class="error">
-    There are no posts on code category
-</p>
-{% endif %}
+<h1 id="title">
+   Top page
+</h1>
+
+{% assign posts = site.posts | sort: 'date' | reverse %}
+{% assign limit = 10 %}
+{% include posts.html %}

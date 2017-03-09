@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1 id="title">
+    Posts on {{ page.title }} category
+</h1>
+
+<div id="content">
+    {% assign posts = site.posts | where:"category",page.title | sort: 'date' | reverse %}
+    {% if posts.size > 0 %}
+        {% assign tags = '' %}
+        {% for post in posts %}
+            {% for tag in post.tags %}
+                {% unless tags contains tag %}
+                    {% assign tags = tags | append:'|' | append:tag %}
+                {% endunless %}
+            {% endfor %}
+        {% endfor %}
+        {% assign tags = tags | split: '|' %}
+        {% include tags.html %}
+
+        {% include posts.html %}
+    {% else %}
+    <p class="error">
+        There are no posts on {{ page.title }} category
+    </p>
+    {% endif %}
+</div>

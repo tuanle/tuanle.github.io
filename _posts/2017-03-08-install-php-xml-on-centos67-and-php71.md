@@ -1,46 +1,34 @@
 ---
-layout: default
+layout: post
 title:  "Install php-xml on centos 6.7 and php 7.1"
 date: 2017-03-08
-tags: [installation, centos, php, ext-dom, phpunit, github-pages]
+category: work
+tags: [installation, centos, php]
 ---
 
 * TOC
 {:toc}
 
-## 1, How to check system version and php version
-
-Check system version
+## How to check system version and php version
 
 ```shell
+# Check system version
 cat /etc/*release
-```
 
-Check php version
-
-```shell
+# Check php version
 php --version
-```
 
-Check php loaded configurations
-
-```shell
+# Check php loaded configurations
 php -i | grep ini
-```
 
-Check php loaded modules
-
-```shell
+# Check php loaded modules
 php -m
-```
 
-Check where php modules is installed
-
-```shell
+# Check where php modules is installed
 php -i | grep extension_dir
 ```
 
-## 2, How to install php-xml
+## How to install php-xml
 
 The problem is when run `composer update`, I receive error log:
 
@@ -72,6 +60,6 @@ sudo service httpd restart
 
 And it worked.
 
-3, More information
+## More information
 
-[https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html](https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html)
+- [https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html](https://centos.pkgs.org/7/remi-x86_64/php71-php-xml-7.1.2-1.el7.remi.x86_64.rpm.html)

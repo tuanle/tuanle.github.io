@@ -1,11 +1,32 @@
-<header class="row">
-    <ul id="menu">
-        <li class="item"><a href="/code">code</a></li>
-        <li class="item"><a href="/life">life</a></li>
-        <li class="item"><a href="/book">book</a></li>
-        <li class="item"><a href="/me">me</a></li>
-    </ul>
-    <h1 id="title">
-        {{ page.title }}
-    </h1>
-</header>
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ page.title or 'page' }} | tuanlq.com</title>
+
+        <meta name="author" content="Lê Quốc Tuấn" />
+        <meta name="description" content="{{ page.title or 'Personal blog' }}">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />
+        <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
+    </head>
+    <body>
+        <div id="container" class="container">
+            <header class="row">
+                <ul id="menu" class="list-inline">
+                    <li class="item"><a href="/">top</a></li>
+                    {% for category in site.categories | sort: 'date' %}
+                    <li class="item">
+                        <a href="/categories/{{ category.title }}.html" title="Posts on {{ category.title }} category">
+                            {{ category.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </header>
