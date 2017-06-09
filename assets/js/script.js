@@ -1,3 +1,8 @@
+var elements = document.querySelectorAll('.highlight');
+Array.prototype.forEach.call(elements, function(element, index) {
+	Ps.initialize(element);
+});
+
 var getScrollOffsets = function() {
     var doc = document, w = window, x, y, docEl;
 

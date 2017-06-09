@@ -1,11 +1,9 @@
 {% if tags.size > 0 %}
-<ul id="tags" class="list-inline">
+<div id="tags">
     {% for tag in tags %}
         {% if tag.size > 0 %}
-        <li class="tag">
-            <a href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">{{ tag }}</a>
-        </li>
+        <a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">{{ tag }}</a>
         {% endif %}
     {% endfor %}
-</ul>
+</div>
 {% endif %}

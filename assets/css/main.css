@@ -13,9 +13,8 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.618;
-    /* color: #c5c8c6; */
-    color: #eaeaea;
-    background: #000000;
+    color: #626262;
+    background: #eeeeee;
 }
 
 /*
@@ -78,18 +77,18 @@ textarea {
 }
 
 a {
-    color: #7aa6da;
+    color: #0087af;
     text-decoration: none;
     cursor: pointer;
 }
 
 a:hover {
-    color: #afcae9;
+    color: #87afd7;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    color: #e78c45;
+    color: #d78700;
 }
 
 ul, ul ul, ul ul ul, ul ul ul ul, ul ul ul ul ul {
@@ -134,28 +133,28 @@ header {
 }
 
 #menu .item a, a.category {
-    color: #000000;
+    color: #eeeeee;
     background: #d54e53;
     padding: 3px 5px;
 }
 
 #menu .item a:hover, a.category:hover {
     color: #d54e53;
-    background: #000000;
     padding: 1px 3px;
     border: 2px solid #d54e53;
+    background: none;
 }
 
 #tags .tag a, a.tag {
-    color: #000000;
+    color: #eeeeee;
     background: #7aa6da;
-    padding: 3px;
+    padding: 3px 5px;
 }
 
 #tags .tag a:hover, a.tag:hover {
     color: #7aa6da;
     border: 2px solid #7aa6da;
-    padding: 1px;
+    padding: 1px 3px;
     background: none;
 }
 
@@ -169,34 +168,28 @@ h1#title {
 }
 
 table.article-short-item {
-    margin: 8px 0;
+    margin-top: 8px;
 }
 
 table.article-short-item th {
+    vertical-align: top;
     font-weight: normal;
-    font-size: 12px;
-    font-style: italic;
-    width: 44px;
-    min-width: 44px;
+    width: 80px;
     color: #c397d8;
 }
 
-table.article-short-item th.month-day {
-    border-bottom: 1px solid #c397d8;
-}
-
 table.article-short-item td.article-title {
+    vertical-align: top;
     padding-left: 8px;
 }
 
 .timestamp {
-    font-size: 12px;
     color: #c397d8;
-    border-bottom: 1px solid #c397d8;
+    /* border-bottom: 1px solid #c397d8; */
 }
 
 #navigation {
-    border-top: 2px solid #424242;
+    border-top: 2px solid #626262;
     padding-top: 16px;
     margin-bottom: 32px;
 }
@@ -212,18 +205,33 @@ footer {
 
 footer .info {
     color: #969896;
-    background: #424242;
-    padding: 3px 5px;
+    /* background: #424242;
+    padding: 3px 5px; */
 }
 
+/*
 pre code {
     font-size: 0.8rem;
 }
+*/
 
 code {
-    color: #000000;
-    background: #eaeaea;
-    padding: 0 3px;
+    color: #00afaf;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    /*
+    background: #bcbcbc;
+    padding: 0 3px;*/
+}
+
+.highlight .code pre {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+}
+
+.highlight {
+    position: relative;
+	padding: 10px 0;
 }
 
 
