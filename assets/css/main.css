@@ -9,12 +9,14 @@
    ========================================================================== */
 
 html, body {
-    /* font-family: 'Noto Sans', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.618;
-    color: #626262;
-    background: #eeeeee;
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
+    color: #424242;
+    background: #f5f5f5;
 }
 
 /*
@@ -26,7 +28,7 @@ html, body {
  */
 
 ::selection {
-    background: #b3d4fc;
+    background: #bdbdbd;
     text-shadow: none;
 }
 
@@ -77,18 +79,17 @@ textarea {
 }
 
 a {
-    color: #0087af;
+    color: #424242;
     text-decoration: none;
-    cursor: pointer;
 }
 
 a:hover {
-    color: #87afd7;
+    color: #757575;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    color: #d78700;
+    color: #222;
 }
 
 ul, ul ul, ul ul ul, ul ul ul ul, ul ul ul ul ul {
@@ -125,37 +126,36 @@ ul.list-inline li:last-child, a.tag:last-child {
 #container {
     width: 720px;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto auto 10%;
 }
 
 header {
     margin-bottom: 16px;
 }
 
+#menu .item {
+    margin-right: 10px;
+}
+
 #menu .item a, a.category {
-    color: #eeeeee;
-    background: #d54e53;
-    padding: 3px 5px;
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 #menu .item a:hover, a.category:hover {
-    color: #d54e53;
-    padding: 1px 3px;
-    border: 2px solid #d54e53;
-    background: none;
+    color: #616161;
 }
 
 #tags .tag a, a.tag {
-    color: #eeeeee;
-    background: #7aa6da;
-    padding: 3px 5px;
+    color: #424242;
+    text-transform: lowercase;
+    text-decoration: underline;
 }
 
 #tags .tag a:hover, a.tag:hover {
-    color: #7aa6da;
-    border: 2px solid #7aa6da;
-    padding: 1px 3px;
-    background: none;
+    color: #757575;
 }
 
 h1#title {
@@ -184,8 +184,8 @@ table.article-short-item td.article-title {
 }
 
 .timestamp {
-    color: #c397d8;
-    /* border-bottom: 1px solid #c397d8; */
+    border-left: 1px solid #424242;
+    padding-left: 3px;
 }
 
 #navigation {
@@ -204,9 +204,9 @@ footer {
 }
 
 footer .info {
-    color: #969896;
-    /* background: #424242;
-    padding: 3px 5px; */
+    color: #9e9e9e;
+    padding: 3px;
+    border: 1px solid #9e9e9e;
 }
 
 /*
@@ -216,12 +216,9 @@ pre code {
 */
 
 code {
-    color: #00afaf;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    /*
-    background: #bcbcbc;
-    padding: 0 3px;*/
+    color: #212121;
+    background: #9e9e9e;
+    padding: 2px;
 }
 
 .highlight .code pre {
