@@ -8,6 +8,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/*
 html, body {
     font-family: Ubuntu, sans-serif;
     font-size: 14px;
@@ -18,10 +19,22 @@ html, body {
     color: #424242;
     background: #f5f5f5;
 }
+*/
+
+@font-face { font-family: Pixel; src: url('./pixel.ttf'); }
+
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: "Droid Sans Mono", monospace;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
 
 /*
  * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
+ * https://twitter.com/miketaylr/status/10f08805301
  *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
@@ -79,17 +92,31 @@ textarea {
 }
 
 a {
-    color: #424242;
+    color: #0f0;
     text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 a:hover {
     color: #757575;
 }
 
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 110%;
+}
+
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    color: #222;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
 }
 
 ul, ul ul, ul ul ul, ul ul ul ul, ul ul ul ul ul {
@@ -126,26 +153,34 @@ ul.list-inline li:last-child, a.tag:last-child {
 #container {
     width: 720px;
     max-width: 90%;
-    margin: 0 auto auto 10%;
+    margin: 28px auto 28px 10%;
+    border: 1px solid #0f0;
 }
 
 header {
     margin-bottom: 16px;
+    border-bottom: 1px solid #0f0;
+}
+
+#menu {
+    padding: 0;
+    margin: 0;
 }
 
 #menu .item {
-    margin-right: 10px;
+    display: inline-block;
+    border-right: 1px solid #0f0;
 }
 
-#menu .item a, a.category {
-    color: #212121;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
+#menu > .item > a, a.category {
+    display: inline-block;
+    color: #0f0;
+    padding: 10px;
+    border-bottom: 0;
 }
 
 #menu .item a:hover, a.category:hover {
-    color: #616161;
+    background: #030;
 }
 
 #tags .tag a, a.tag {
