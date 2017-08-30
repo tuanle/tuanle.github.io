@@ -2,7 +2,7 @@
 <div id="tags">
     {% for tag in tags %}
         {% if tag.size > 0 %}
-        <a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">{{ tag }}</a>
+        <a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">#{{ tag }}</a>
         {% endif %}
     {% endfor %}
 </div>

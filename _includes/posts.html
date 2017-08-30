@@ -1,19 +1,13 @@
 {% if limit %}
     {% for post in posts limit:limit %}
-        <table class="article-short-item">
-            <tr>
-                <th class="month-day">{{ post.date | date: "%d %b %y" }}</th>
-                <td class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
-            </tr>
-        </table>
+        <ul class="article-short-item">
+            <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        </ul>
     {% endfor %}
 {% else %}
     {% for post in posts %}
-        <table class="article-short-item">
-            <tr>
-                <th class="month-day">{{ post.date | date: "%d %b %y" }}</th>
-                <td class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
-            </tr>
-        </table>
+        <ul class="article-short-item">
+            <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        </ul>
     {% endfor %}
 {% endif %}

@@ -21,11 +21,11 @@
         <div id="container" class="container">
             <header class="row">
                 <ul id="menu" class="list-inline">
-                    <li class="item"><a href="/">top</a></li>
+                    <li><a href="/">{{ site.name | upcase }}</a></li>
                     {% for category in site.categories | sort: 'date' %}
-                    <li class="item">
+                    <li>
                         <a href="/categories/{{ category.title }}.html" title="Posts on {{ category.title }} category">
-                            {{ category.title }}
+                            {{ category.title | upcase }}
                         </a>
                     </li>
                     {% endfor %}
