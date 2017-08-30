@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div id="content" class="row">
     <div id="time">
         {{ page.date | date_to_string }}
@@ -11,14 +10,13 @@ layout: default
     </h1>
     {{ content }}
 </div>
-
 <div id="navigation">
-    <div class="group">
-        Post on <a id="page-category" class="category" href="/categories/{{ page.category }}.html" title="Posts on {{ page.category }} category">{{ page.category }}</a>
-        with {% for tag in page.tags %}<a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">{{ tag }}</a>{% endfor %}
+    <div id="info">
+        Post on <a id="page-category" class="category" href="/categories/{{ page.category }}.html" title="Posts on {{ page.category }} category">\{{ page.category }}</a>
+        with {% for tag in page.tags %}<a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">#{{ tag }}</a>&nbsp;{% endfor %}
     </div>
     <br/>
-    <div class="prev-next">
+    <div id="go">
         {% if page.previous.url %}
         <a id="prev" href="{{page.previous.url}}">&#9664;&nbsp;{{page.previous.title}}</a>
         {% endif %}

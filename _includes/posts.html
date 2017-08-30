@@ -1,13 +1,13 @@
 {% if limit %}
+    <ul class="article-short-item">
     {% for post in posts limit:limit %}
-        <ul class="article-short-item">
-            <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-        </ul>
+        <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
+    </ul>
 {% else %}
+    <ul class="article-short-item">
     {% for post in posts %}
-        <ul class="article-short-item">
-            <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-        </ul>
+        <li class="article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
+    </ul>
 {% endif %}

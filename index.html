@@ -3,10 +3,11 @@ layout: default
 title: Top
 ---
 
-<h1 id="title">
-   Top page
-</h1>
-
-{% assign posts = site.posts | sort: 'date' | reverse %}
-{% assign limit = 10 %}
-{% include posts.html %}
+<div id="content">
+    <h1 id="title">
+       Top page
+    </h1>
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% assign limit = 10 %}
+    {% include posts.html %}
+</div>
