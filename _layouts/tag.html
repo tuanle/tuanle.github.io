@@ -1,17 +1,16 @@
 ---
 layout: default
 ---
-<h1 id="title">
-    Posts on {{ page.title }} tag
-</h1>
-
 <div id="content">
+    <h1 id="title">
+        Posts on #{{ page.title }} tag
+    </h1>
     {% assign posts = site.posts | where:"tags",page.title | sort: 'date' | reverse %}
     {% if posts.size > 0 %}
         {% include posts.html %}
     {% else %}
     <p class="error">
-        There are no posts on {{ page.title }} tag
+        There are no posts on #{{ page.title }} tag
     </p>
     {% endif %}
 </div>
