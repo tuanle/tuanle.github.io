@@ -2,9 +2,6 @@
 layout: default
 ---
 <div id="content" class="row">
-    <div id="time">
-        {{ page.date | date_to_string }}
-    </div>
     <h1 id="title">
         {{ page.title }}
     </h1>
@@ -13,7 +10,7 @@ layout: default
 <div id="navigation">
     <div id="info">
         Post on <a id="page-category" class="category" href="/categories/{{ page.category }}.html" title="Posts on {{ page.category }} category">\{{ page.category }}</a>
-        with {% for tag in page.tags %}<a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">#{{ tag }}</a>&nbsp;{% endfor %}
+        with {% for tag in page.tags %}<a class="tag" href="/tags/{{ tag }}.html" title="Posts on {{ tag }} tag">#{{ tag }}</a>&nbsp;{% endfor %}at <span class="timestamp">{{ page.date | date_to_string }}</span>
     </div>
     <br/>
     <div id="go">

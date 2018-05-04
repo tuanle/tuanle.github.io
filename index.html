@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Top
+title: Homepage
 ---
 
 <div id="content">
+    <!--
     <h1 id="title">
-       Top page
+      Homepage
     </h1>
+    -->
     {% assign posts = site.posts | sort: 'date' | reverse %}
     {% assign limit = 10 %}
     {% include posts.html %}
