@@ -87,7 +87,7 @@ footer .info {
   padding: 3px;
 }
 
-code {
+code.highlighter-rouge {
   background: #E8DDCB;
   padding: 0 .125em;
 }
