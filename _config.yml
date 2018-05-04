@@ -1,7 +1,6 @@
 name: mid9
 url: mid9.net
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge

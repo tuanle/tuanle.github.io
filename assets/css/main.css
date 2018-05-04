@@ -92,14 +92,12 @@ code.highlighter-rouge {
   padding: 0 .125em;
 }
 
-.highlight .code pre {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 12px;
+div.highlight pre.highlight {
+  padding: 14px 0;
 }
 
-.highlight {
-  position: relative;
-	padding: 10px 0;
+pre {
+  margin: 0;
 }
 
 /* ==========================================================================
