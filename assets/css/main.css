@@ -1,7 +1,10 @@
 body {
-    background-color: #000;
+  background-color: #ECECEC;
+  font-family: 'Lora', serif;
+  color: #25020F;
+    /*background-color: #000;
     color: #0f0;
-    font-family: "Droid Sans Mono", monospace;
+    font-family: "Droid Sans Mono", monospace;*/
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -13,23 +16,22 @@ body {
 }
 
 a {
-    color: #0f0;
-    text-decoration: none;
-    border-bottom: 1px dotted;
+  color: #0B486B;
+  text-decoration: none;
 }
 
 a:hover {
-    text-shadow: 0 0 10px #0f0;
+  color: #031634;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: normal;
-    color: #0f0;
+  font-family: 'Quicksand', sans-serif;
+  color: #25020F;
 }
 
 h1 { font-size: 150%; }
 h2 { font-size: 130%; }
-h3 { font-size: 110%; }
+h3,h4,h5 { font-size: 100%; }
 
 ul, ul ul, ul ul ul, ul ul ul ul, ul ul ul ul ul {
     padding-left: 28px;
@@ -46,41 +48,34 @@ ul.list-inline {
     width: 720px;
     max-width: 90%;
     margin: 2em auto;
-    border: 1px solid #0f0;
 }
 
 header {
-    border-bottom: 1px solid #0f0;
 }
 
 #menu li {
-    display: inline-block;
-    border-right: 1px solid #0f0;
+  display: inline-block;
 }
 
 #menu li a {
-    display: inline-block;
-    color: #0f0;
-    padding: 4px 8px;
-    border-bottom: 0;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  padding: 4px 8px;
 }
 
 #menu li a:hover {
-    background: #030;
 }
 
 #content {
     padding: 1em 0.5em;
-    border-bottom: 1px solid #0f0;
 }
 
 #navigation {
-    padding: 1em 0.5em;
-    border-bottom: 1px solid #0f0;
+  padding: 1em 0.5em;
 }
 
 a.prev, a.next {
-    display: block;
+  display: block;
 }
 
 footer {
@@ -88,14 +83,13 @@ footer {
 }
 
 footer .info {
-    color: #9e9e9e;
-    padding: 3px;
-    border: 1px solid #9e9e9e;
+  color: #9e9e9e;
+  padding: 3px;
 }
 
 code {
-    background: #030;
-    padding: 0 .125em;
+  background: #E8DDCB;
+  padding: 0 .125em;
 }
 
 .highlight .code pre {
@@ -104,7 +98,7 @@ code {
 }
 
 .highlight {
-    position: relative;
+  position: relative;
 	padding: 10px 0;
 }
 
