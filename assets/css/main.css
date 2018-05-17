@@ -16,6 +16,7 @@ body {
 }
 
 a {
+  font-family: 'Quicksand', sans-serif;
   color: #0B486B;
   text-decoration: none;
 }
@@ -26,6 +27,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   color: #FF1168;
 }
 
@@ -35,7 +37,7 @@ h3,h4,h5 { font-size: 100%; }
 
 ul, ul ul, ul ul ul, ul ul ul ul, ul ul ul ul ul {
   padding-left: 28px;
-  list-style: decimal;
+  /**list-style: decimal;**/
 }
 
 ul.list-inline {
@@ -47,7 +49,7 @@ ul.list-inline {
 #container {
   width: 640px;
   max-width: 640px;
-  margin: 2em auto;
+  margin: 2em 200px auto;
 }
 
 header {
@@ -93,8 +95,8 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 2em;
-  font-size: 20px;
+  line-height: 1.85em;
+  font-size: 130%;
 }
 
 #content {
@@ -132,6 +134,19 @@ div.highlight pre.highlight {
 
 pre {
   margin: 0;
+}
+
+#markdown-toc {
+  position: fixed;
+  top: 30px;
+  left: 900px;
+  list-style: decimal;
+  width: 200px;
+}
+
+#markdown-toc li {
+  margin-top: 0.5em;
+  background: #f5f2f0;
 }
 
 /* ==========================================================================
